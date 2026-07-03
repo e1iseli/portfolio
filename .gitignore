@@ -6,3 +6,7 @@ index-*.html
 *.png
 *.jpg
 *.jpeg
+!assets/
+!assets/portfolio/
+!assets/portfolio/*.png
+!assets/portfolio/*.jpg
