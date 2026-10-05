@@ -19,7 +19,7 @@
     return /* @__PURE__ */ React.createElement("a", { href: "#", className: "brand brand--text-only", onClick: (e) => {
       e.preventDefault();
       window.location.hash = "#";
-    } }, /* @__PURE__ */ React.createElement("div", { className: "brand__text" }, /* @__PURE__ */ React.createElement("span", { className: "brand__name" }, "ELISE LI"), /* @__PURE__ */ React.createElement("span", { className: "brand__sub" }, "Head of Design")));
+    } }, /* @__PURE__ */ React.createElement("div", { className: "brand__text" }, /* @__PURE__ */ React.createElement("span", { className: "brand__name" }, "ELISE LI")));
   }
   function Liquid() {
     return /* @__PURE__ */ React.createElement("div", { className: "liquid" }, /* @__PURE__ */ React.createElement("div", { className: "liquid__base" }, /* @__PURE__ */ React.createElement("div", { className: "liquid__blob liquid__blob--a" }), /* @__PURE__ */ React.createElement("div", { className: "liquid__blob liquid__blob--b" }), /* @__PURE__ */ React.createElement("div", { className: "liquid__blob liquid__blob--c" }), /* @__PURE__ */ React.createElement("div", { className: "liquid__blob liquid__blob--d" }), /* @__PURE__ */ React.createElement("div", { className: "liquid__blob liquid__blob--e" })), /* @__PURE__ */ React.createElement("div", { className: "liquid__grain" }));
