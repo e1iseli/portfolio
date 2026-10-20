@@ -977,7 +977,7 @@ body.dark .featured-projects::before { background: radial-gradient(circle, rgba(
 .featured-projects__head { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.7fr); gap: 28px; align-items: end; margin-bottom: 32px; }
 .featured-projects__head h2, .beyond-work__copy h2 { font-family: Georgia, serif; font-size: clamp(34px, 4.4vw, 72px); line-height: 1.02; font-weight: 400; letter-spacing: -0.02em; max-width: 860px; }
 .featured-projects__head p, .beyond-work__copy > p { color: var(--ink-60); font-size: clamp(15px, 1.3vw, 18px); line-height: 1.7; font-weight: 300; }
-.featured-projects__grid { display: grid; grid-template-columns: 1.25fr 0.88fr 0.88fr; gap: 18px; align-items: stretch; }
+.featured-projects__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; align-items: stretch; }
 .featured-card {
   appearance: none; border: 1px solid var(--hairline); background: var(--bg-soft); color: var(--ink); text-align: left; padding: 0; border-radius: 8px; overflow: hidden; cursor: pointer;
   display: flex; flex-direction: column; min-height: 520px; box-shadow: 0 24px 60px -45px rgba(0,0,0,0.45); transition: transform 0.45s cubic-bezier(0.2,0.8,0.2,1), box-shadow 0.45s ease, border-color 0.45s ease;
@@ -1775,7 +1775,7 @@ body.dark .project-detail__pill { background: rgba(255,255,255,0.08); }
 <body>
   <div id="root"></div>
   <script src="assets/runtime/tweaks.compiled.js?v=3"></script>
-  <script src="assets/runtime/portfolio.compiled.js?v=5"></script>
+  <script src="assets/runtime/portfolio.compiled.js?v=6"></script>
 
 
 </body></html>
