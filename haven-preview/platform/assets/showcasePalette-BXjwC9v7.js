@@ -1,1 +1,0 @@
-const a=["#319fee","#f3b56b","#9b8de3","#88a62d","#59b9aa"],e=["#e8f4f0","#c9e8de","#9ad0be","#65b298","#31856b"],S={primary:"var(--haven-ink)",secondary:"var(--haven-muted)",muted:"var(--haven-muted)"},n="var(--haven-line)";export{a as S,n as a,S as b,e as c};

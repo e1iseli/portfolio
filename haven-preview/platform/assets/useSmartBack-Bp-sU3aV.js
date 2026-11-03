@@ -1,1 +1,0 @@
-import{r as e}from"./index-D8d-0zYB.js";import{b as a}from"./App-vgLoOfOv.js";function i(t="/"){const r=a();return e.useCallback(()=>{if(window.history.length>1){r(-1);return}r(t,{replace:!0})},[t,r])}export{i as u};
