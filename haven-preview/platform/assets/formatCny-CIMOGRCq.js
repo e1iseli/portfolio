@@ -1,0 +1,1 @@
+function e(r,i){if(r===null)return i("family_cny_missing");const t=r<0?"-":"",n=Math.abs(r),a=Math.round(n).toLocaleString("en-US");return n>=1e8?`${t}${i("family_cny_large",{yi:(n/1e8).toFixed(2),raw:a})}`:n>=1e4?`${t}${i("family_cny_medium",{wan:Math.round(n/1e4).toLocaleString("en-US"),raw:a})}`:`${t}${i("family_cny_small",{raw:a})}`}export{e as f};

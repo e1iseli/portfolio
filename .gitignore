@@ -10,3 +10,7 @@ index-*.html
 !assets/portfolio/
 !assets/portfolio/*.png
 !assets/portfolio/*.jpg
+
+# Static Haven demo assets approved for public portfolio hosting.
+!haven-preview/
+!haven-preview/**

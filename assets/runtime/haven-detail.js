@@ -79,7 +79,7 @@ function HavenProjectDetail({lang, onBack}) {
         h('h1',{className:'project-detail__title'},'Haven AI'),
         h('div',{className:'project-detail__meta project-detail__meta--tags'},['Private Wealth','Personal AI','2026'].map(label=>h('span',{key:label,className:'project-detail__pill'},label))),
         h('p',{className:'project-detail__intro'},'Your 24/7 private AI relationship manager. Helping overseas high-net-worth individuals preserve their wealth through a private, secure and effortless experience.'),
-        h('div',{className:'haven-links'},h('a',{href:'http://127.0.0.1:4320/#/',target:'_blank',rel:'noopener'},h(HavenIcon,{name:'platform'}),'View platform ↗'),h('a',{href:'http://127.0.0.1:4321/',target:'_blank',rel:'noopener'},h(HavenIcon,{name:'system'}),'View design system ↗'))),
+        h('div',{className:'haven-links'},h('a',{href:'haven-preview/?view=platform'},h(HavenIcon,{name:'platform'}),'View platform ↗'),h('a',{href:'haven-preview/?view=design-system'},h(HavenIcon,{name:'system'}),'View design system ↗'))),
       h('div',{id:'haven-onboarding'},h(HavenOnboarding)),
       h('figure',{id:'haven-platform',className:'haven-lead'},h('img',{src:'assets/portfolio/haven-platform-en.webp',width:1280,height:630,alt:'Haven platform home captured from the supplied local application in English',loading:'lazy',decoding:'async'}),h('figcaption',null,'Platform home — captured from the supplied local application.')),
       h('div',{className:'haven-content',dangerouslySetInnerHTML:{__html:window.HAVEN_CASE_HTML}})));

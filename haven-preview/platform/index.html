@@ -1,0 +1,45 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head><script>try { if (!localStorage.getItem('haven-preview-language-initialized')) { localStorage.setItem('chaosdemo:lang','en'); localStorage.setItem('chaos-language-mode','manual'); localStorage.setItem('haven-preview-language-initialized','true'); } } catch {}</script>
+      <meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; connect-src &#39;none&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; data: blob:; font-src &#39;self&#39; data:; media-src &#39;self&#39; blob:; frame-src &#39;none&#39;; object-src &#39;none&#39;; form-action &#39;none&#39;; base-uri &#39;self&#39;">
+
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <script>
+        // Apply the saved app theme before the first loading frame, without waiting for React.
+        try {
+          document.documentElement.setAttribute('data-haven-theme', localStorage.getItem('haven:appearance') === 'dark' ? 'dark' : 'light');
+        } catch {
+          document.documentElement.setAttribute('data-haven-theme', 'light');
+        }
+      </script>
+      <link rel="stylesheet" href="./haven-loading.css" />
+      <title>Haven — Your private wealth space.</title>
+      <script type="module" crossorigin src="./assets/index-BpoN4nj3.js"></script>
+    <script src="./hosting.js"></script></head>
+
+    <body>
+      <div id="root">
+        <main id="startup" class="haven-loading">
+          <div class="haven-loading__logo" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <p role="status" aria-live="polite">您的财富空间，即将就绪</p>
+          <p id="startup-slow" hidden>连接较慢，正在继续加载。 · The connection is slow; loading continues.</p>
+          <p id="startup-failed" hidden>页面暂未打开，请重新加载。 · The workspace could not open. Please reload.</p>
+          <button id="startup-retry" hidden type="button" style="padding:12px 20px;font:inherit;cursor:pointer">重新加载 · Reload</button>
+          <noscript>请启用 JavaScript 以使用工作空间。 · Please enable JavaScript to open your workspace.</noscript>
+        </main>
+      </div>
+      <script>
+        document.getElementById('startup-retry').addEventListener('click', function () { location.reload(); });
+        setTimeout(function () {
+          var notice = document.getElementById('startup-slow'), retry = document.getElementById('startup-retry');
+          var failure = document.getElementById('startup-failed');
+          if (failure && !failure.hidden) return;
+          if (notice) notice.hidden = false;
+          if (retry) retry.hidden = false;
+        }, 10000);
+      </script>
+    </body>
+  </html>

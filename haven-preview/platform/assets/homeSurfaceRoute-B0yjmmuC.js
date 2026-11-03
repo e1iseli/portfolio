@@ -1,0 +1,1 @@
+const n="surface",s=`/?${n}=news`;function a(r){const e=r.get(n);return e==="news"?"news":e==="advisor"?"advisor":"panel"}function o(r,e){const t=new URLSearchParams(r);return e==="panel"?t.delete(n):t.set(n,e),t}export{s as H,a as h,o as w};

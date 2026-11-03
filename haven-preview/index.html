@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Haven — Portfolio preview</title>
+  <link rel="stylesheet" href="preview.css">
+  <script src="preview.js" defer></script>
+</head>
+<body>
+  <header><a href="../#haven">← Haven AI case study</a><nav aria-label="Preview selection"><a href="?view=platform" id="platform-link">Platform</a><a href="?view=design-system" id="system-link">Design System</a></nav><span>Portfolio demo</span></header>
+  <main id="gate">
+    <form id="unlock-form">
+      <p class="eyebrow">HAVEN / PORTFOLIO PREVIEW</p>
+      <h1 id="preview-title">Haven Platform</h1>
+      <p>Use the same password as the Haven case study.</p>
+      <label for="password">Password</label>
+      <input id="password" type="password" autocomplete="off" required>
+      <button type="submit">View preview →</button>
+      <p id="error" role="alert"></p>
+      <small>Interactive demonstration with fictional data. Please do not enter personal or financial information.</small>
+    </form>
+  </main>
+  <div id="preview" hidden></div>
+</body>
+</html>

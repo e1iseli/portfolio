@@ -1,0 +1,1 @@
+import{G as o}from"./gem-kB3YDJC_.js";import{W as r}from"./wallet-OUOoP027.js";import{B as i,D as e}from"./dollar-sign-BEKhBQJS.js";import{B as s}from"./building-2-C_sTr4Gg.js";import{L as a}from"./landmark-BTm1zMGS.js";const n={equities:e,"real-estate":s,crypto:i,cash:r,collectibles:o};function m(t){return n[t]??a}function B(t){return{...t,icon:m(t.id)}}export{B as w};
